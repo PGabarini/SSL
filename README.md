@@ -1,13 +1,10 @@
 # SSL
 
-Sintaxis y Semantica de los Lenguajes
+Este es el repositorio general de la materia de Sintaxis y Semantica de los Lenguajes de Pablo David Gabarini
 
 Curso K2152 
 
 2024
-
-Pablo David
-Gabarini
 
 Legajo: 213.721-5
 
