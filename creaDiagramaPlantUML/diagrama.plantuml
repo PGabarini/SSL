@@ -1,0 +1,55 @@
+@startuml diagramaDelCodigo
+
+class Perro { 
+juguetes
+override
+curar()
+perseguirA(unGato)
+} 
+
+class Caballo { 
+comer(unosGramos)
+galopar(unaDistanc.,f.dsfdsia)
+estaFeliz()
+curar()
+} 
+
+object pegaso { 
+dondeEsta
+volarHacia(unaCiudad)
+estaFeliz()
+pasarElTiempo(unTiempo)
+} 
+
+class Golondrina { 
+dondeEsta
+dondeEsta()
+comer(unosGramos)
+volarHacia(unaCiudad)
+estaFeliz()
+curar()
+pasarElTiempo(unTiempo)
+} 
+
+class Gato { 
+comer(unosGramos)
+estaFeliz()
+curar()
+serPerseguido()
+} 
+
+class Animal { 
+responsable
+energia
+responsabledsa
+energia()
+responsable()
+gritoNombreDeResponsable()
+comer(unosGramos)
+pasarElTiempo(unTiempo)
+estaFeliz()
+curar()
+} 
+
+
+@enduml

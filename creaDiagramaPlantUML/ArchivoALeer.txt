@@ -1,0 +1,142 @@
+class Perro inherits Animal{
+    const juguetes = []
+    var 
+    override method curar(  ){
+        self.comer(50)
+    }
+
+    method perseguirA(unGa to){
+        energia -= 50
+        juguetes.remove(juguetes.first())
+        unGato.serPerseguido()
+     }
+
+
+}
+
+
+class Caballo inherits Animal {
+
+  override method comer( unosGramos) {
+    energia += 2 * unosGramos
+  }
+
+  method galopar(una Distanc .,f.dsfds ia) {
+    energia -= unaDistancia
+  }
+
+  override method estaFeliz() = true
+
+  override method curar() {
+    self.galopar(3)
+		self.comer(3000)
+		self.galopar(5)
+  }
+}
+
+object pegaso inherits Caballo(energia = 100000000000, responsable = "Hércules"){
+  var dondeEsta = "Olimpo"
+
+  method volarHacia(unaCiudad) {
+      dondeEsta = unaCiudad
+      energia /= 2
+  }
+
+  override method estaFeliz(){
+    return super() && dondeEsta == "Olimpo"
+  }
+
+  override method pasarElTiempo(unTiempo){
+    self.volarHacia("Olimpo")
+  }
+
+
+}
+
+class Golondrina inherits Animal{   //object tuvieja{ method  pablo()}
+    var dondeEsta
+  
+    method dondeEsta() {
+      return dondeEsta
+    }
+  
+    override method comer(unosGramos) {
+      energia += unosGramos / 2
+    }
+  
+    method volarHacia(unaCiudad) {
+      dondeEsta = unaCiudad
+      energia /= 2
+    }
+  
+    override method estaFeliz() {
+      return dondeEsta == "Lihuel Calel"
+    }
+  
+    override method curar() {
+      self.volarHacia("Lihuel Calel")
+    }
+
+    override method pasarElTiempo(unTiempo){
+      super(unTiempo*2)
+      self.volarHacia("Mar del Plata")
+    }
+  }
+
+//object tuvieja{ method  pablo()}
+
+  class Gato inherits Animal{ 
+    
+    override method comer(unosGramos) {
+      energia += unosGramos
+    }
+
+    override method estaFeliz() {
+      return energia > 30
+    }
+  
+    override method curar() {
+          self.comer(400)
+      }
+      
+    method serPerseguido(){
+    	energia -= 10
+    }
+   const canela =new Perro(energia = 100, responsable = "Lu", juguetes = ["soga","pelota"])
+const juana= new Perro(energia = 100, responsable = "Nico", juguetes = ["trapo","pelota","espatula"])
+const nano=new Caballo(energia = 100, responsable = "Ro")
+const pepita = new Golondrina(energia = 100, responsable = "Gus", dondeEsta = "General las Heras")
+  }
+ /*object carajo {}
+ method pablo()*/
+
+  class Animal{
+    const responsable
+    var energia
+    const responsabledsa
+    method energia()=energia
+
+    method responsable  () = responsable
+
+    method gritoNombreDeResponsable(){
+      return responsable.toUpperCase() + "!"
+    }
+//object tuvieja{ method  pablo()}
+    method comer(unosGramos)
+
+    method pasarElTiempo(unTiempo){
+      energia += unTiempo
+    }
+
+    method estaFeliz()
+    method curar()
+
+  }
+ /*object carajo {}
+ method pablo()*/
+
+
+const canela =new Perro(energia = 100, responsable = "Lu", juguetes = ["soga","pelota"])
+const juana= new Perro(energia = 100, responsable = "Nico", juguetes = ["trapo","pelota","espatula"])
+const nano=new Caballo(energia = 100, responsable = "Ro")
+const pepita = new Golondrina(energia = 100, responsable = "Gus", dondeEsta = "General las Heras")
